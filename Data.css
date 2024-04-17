@@ -1,0 +1,42 @@
+/* Animation for the side image */
+.animated-image {
+  animation: slide-in 1s forwards;
+  opacity: 0; /* Initially hidden */
+}
+
+@keyframes slide-in {
+  0% {
+    opacity: 0;
+    transform: translateX(-100%);
+  }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+.animatedButton {
+  position: relative;
+  margin-left: 20px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.slideIn {
+  animation: slideInAnimation 0.5s ease;
+}
+
+@keyframes slideInAnimation {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+

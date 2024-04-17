@@ -1,0 +1,57 @@
+.opening-page {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.backgroundImage {
+  background-size: cover; /* Ensure the background image covers the entire container */
+  position: fixed; /* Fix the position of the background image */
+  top: 0; /* Position from the top of the viewport */
+  left: 0; /* Position from the left of the viewport */
+  width: 100vw; /* Set the width to 100% of the viewport width */
+  height: 100vh; /* Set the height to 100% of the viewport height */
+  z-index: -1; /* Move the background image behind other content */
+  filter: brightness(0.5); /* Adjust the brightness of the background image */
+}
+
+
+.content {
+  z-index: 1; /* Ensure content appears above the background image */
+  text-align: center;
+  color:#030637;
+  font-weight: bolder;
+}
+
+h1 {
+  font-size: 3rem;
+  margin-bottom: 2rem;
+}
+
+.options {
+  display: flex;
+  gap: 20px;
+}
+
+button {
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #007bff; /* Change button color */
+  color: white;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #0056b3; /* Change button color on hover */
+}
+
+.content h1 {
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Adjust values as needed */
+}
+
